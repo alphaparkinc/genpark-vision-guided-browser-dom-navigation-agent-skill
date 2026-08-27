@@ -1,0 +1,38 @@
+{
+  "name": "genpark-vision-guided-browser-dom-navigation-agent-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Vision-guided browser navigation agent interpreting interactive DOM layouts and executing multi-step form workflows.",
+  "author": "genpark",
+  "category": "browser-automation",
+  "tags": [
+    "skyvern",
+    "browser-use",
+    "vision-agent",
+    "dom-navigation",
+    "web-automaton"
+  ],
+  "inputs": {
+    "target_portal_url": {
+      "type": "string"
+    },
+    "task_instructions": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "automation_run_id": {
+      "type": "string"
+    },
+    "dom_elements_interacted_count": {
+      "type": "integer"
+    },
+    "vision_grounded_clicks_verified": {
+      "type": "boolean"
+    },
+    "screen_recording_mp4_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
